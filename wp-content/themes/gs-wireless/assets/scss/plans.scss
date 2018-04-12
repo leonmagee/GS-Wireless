@@ -1,0 +1,56 @@
+.plan-wrap {
+
+	h2 {
+		color: #222;
+	}
+
+	.plan-details-wrap {
+
+		display: flex;
+		padding: 15px 0;
+		border-bottom: 1px solid #DDD;
+		font-size: 22px;
+		//width: 100%;
+
+		.plan-details {
+
+			flex: 1 1 17%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0 10px;
+
+			h4 {
+				font-size: 16px;
+				font-weight: bold;
+				color: #111;
+				white-space: no-wrap;
+			}
+
+			&.month-plan {
+
+			}
+
+			&.nation-talk-text {
+
+			}
+
+			&.lte-data {
+				font-size: 18px;
+			}
+
+			&.int-talk-text {
+
+			}
+
+			&.intl-minutes {
+
+			}
+
+			&.intl-credit {
+				flex: 1 1 15%;
+			}
+
+		}
+	}
+}

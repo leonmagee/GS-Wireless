@@ -1,0 +1,126 @@
+header#masthead {
+  background-color: $base-white;
+  //padding: 10px 0;
+  margin: 0;
+  .grid-x {
+    align-items: center;
+  }
+
+  .site-branding {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    @media(min-width: $screen-md) {
+      padding: 10px 0;
+      display: block;
+    }
+    img {
+      @media(min-width: $screen-sm) {
+        max-width: 350px;
+      }
+    }
+    .menu-toggle {
+      font-size: 30px;
+      color: darken( $brand-primary, 10%);
+      color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      padding-top: 3px;
+      &:hover {
+        cursor: pointer;
+      }
+      @media(min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    justify-content: left;
+    //margin-top: 15px;
+    background-color: #F7F7F7;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    &.menu-hidden {
+      display: none;
+      @media(min-width: $screen-md) {
+        display: flex;
+      }
+    }
+    ul {
+      width: 100%;
+      margin: 0;
+    }
+    @media(min-width: $screen-md) {
+      justify-content: flex-end;
+      //margin-top: 0;
+      background-color: transparent;
+      border: none;
+      ul {
+        width: auto;
+      }
+    }
+    li {
+      width: 100%;
+      text-transform: uppercase;
+      @media(min-width: $screen-md) {
+        border-left: 1px solid #EAEAEA;
+        width: auto;
+      }
+
+      &:first-child {
+        border: none;
+      }
+      a {
+        color: #333;
+        @media(min-width: $screen-sm) {
+          font-size: 17px;
+          @media(min-width: $screen-sm) {
+            font-size: 14px;
+          }
+        }
+        &:hover {
+          color: $brand-primary-hover;
+        }
+      }
+    }
+  }
+
+  .logged-in-bar {
+    background-color: darken( $brand-primary, 5%);
+    padding: 10px 5px;
+
+    .max-width-wrap {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+
+      @media(min-width: $screen-sm) {
+          justify-content: flex-end;
+          font-size: 15px;
+      }
+
+      .item {
+        margin: 0 10px;
+        color: #FFF;
+        text-shadow: 1px 1px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+        font-weight: bold;
+
+        a {
+        color: #FFF;
+        //text-shadow: 1px 1px rgba(0,0,0,0.1);
+        &:hover {
+          color: $brand-second;
+          text-shadow: none;
+        }
+      }
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,140 @@
+.registration-form-wrapper { // used on agent profile page too?
+  // background-color: #FAFAFA;
+  // border: 1px solid #EEE;
+  // padding: 10px 10px 30px;
+  // margin: 15px 0;
+  .gs-button {
+    padding: 10px 15px;
+    margin-left: 8px;
+  }
+  .form-area-top {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-area-middle {
+    //display: none;
+  }
+  .form-footer {
+
+  }
+
+  .registration-input-wrap {
+    width: 100%;
+    flex: 0 1 48%;
+    margin: 1%;
+    // @media(min-width: $screen-md) {
+    //   flex: 0 1 31%;
+    //   margin: 1%;
+    // }
+    label {
+      font-weight: bold;
+    }
+    input {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 13px;
+      padding: 6px 10px;
+      height: auto;
+    }
+    span {
+      //color: $brand-third;
+      color: #FF0000;
+      margin-left: 3px;
+      font-size: 1.1em;
+    }
+  }
+
+  // .submit-input {
+  //   // @include form_text;
+  //   // font-weight: 700;
+  //   padding: 7px 13px;
+  //   border-radius: 5px;
+  //   margin: 0 11px;
+  //   text-transform: uppercase;
+  //   border: none;
+  //   background-color: darken($brand-primary, 10%);
+  //   color: #FFF;
+  //   font-weight: bold;
+  //   font-size: 22px;
+  //   &:hover {
+  //     background-color: darken($brand-primary, 5%);
+  //   }
+  // }
+}
+
+.register-user-email-taken {
+  display: none;
+}
+
+.mp-required-fields {
+  display: none;
+}
+
+
+body.gs-wireless {
+
+      .registration-input-wrap {
+
+        label {
+          font-size: 16px;
+            &:before {
+            font-family: FontAwesome;
+            color: darken( $brand-primary, 15%);
+            float: left;
+            font-size: 20px;
+            line-height: 30px;
+            margin-right: 7px;
+            margin-bottom: 2px;
+            font-weight: normal;
+          }
+        }
+
+        label.first_name, label.last_name {
+
+          &:before {
+            content: "\f2be";
+          }
+        }
+  
+        label.company_name {
+          &:before {
+            //content: "\f0f7";
+            content: "\f0c0";
+          }
+        }
+
+        label.email_address {
+          &:before {
+            content: "\f003";
+          }
+        }
+
+        label.username {
+          &:before {
+            content: "\f2bd";
+          }
+        }
+
+        label.phone_number {
+          &:before {
+            content: "\f095";
+          }
+        }
+
+        label.password {
+          &:before {
+            content: "\f023";
+          }
+        }
+
+        label.tin_ein_or_ssn {
+         &:before {
+           content: "\f2c3";
+         }
+        }
+
+      }
+
+}
+

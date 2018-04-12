@@ -1,0 +1,157 @@
+body.gs-wireless {
+
+  font-family: 'Avenir', sans-serif;
+  h1, h2, h3, h4, h5, a, p {
+
+  font-family: 'Avenir', sans-serif;
+  }
+
+  // hide lightbox caption
+  .tos-caption-0 {
+    //opacity: 0;
+    display: none;
+  }
+
+  .main-grid-wrap {
+    min-height: 100vh;
+  }
+
+  &.home {
+    //background-image: url('../img/pexels-phone-map-opt.jpg');
+    //background-size: cover;
+  }
+  h1 {
+    font-weight: 500;
+  }
+
+  //background-color: $brand-primary;
+  //margin: 0;
+
+
+  /** 
+  * @todo add some media queries here so the max width is bigger for larger screens
+  */
+  .max-width-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media(min-width: $screen-xlg) {
+      max-width: 1500px;
+    }
+  }
+
+  .max-width-wrap-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .main-content-wrap {
+    flex: 1;
+    display: flex;
+    //min-height: 300px;
+  }
+
+  .entry-content {
+    padding: 0 15px;
+    @media( min-width: $screen-md) {
+      padding: 0;
+    }
+  }
+
+  // .body-inner-wrap {
+
+  //   // max-width: 1200px;
+  //   // margin: 0 auto;
+
+  //   .main-content-wrap {
+  //     //min-height: 300px;
+  //   }
+  // }
+
+  // div#page {
+  //   min-height: 100vh;
+  //   display: flex;
+  //   flex-direction: column;
+  //   div#content {
+  //     flex: 1;
+  //   }
+  // }
+
+  h1, h2, h3, h4, h5 {
+    
+    }
+    
+    a {
+      color: darken($brand-primary, 15%);
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+
+
+}
+
+h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+  @media(min-width: $screen-sm) {
+    font-size: 35px;
+    border: none;
+    text-align: left;
+  }
+}
+
+a.gs-button, button.gs-button, button.wpforms-submit {
+  background-color: $brand-primary-hover;
+  color: #FFF !important;
+  text-shadow: 1px 1px rgba(0,0,0,0.05);
+  font-weight: 600;
+  padding: 5px 15px;
+  font-size: 20px;
+  //border: 2px solid $brand-primary-hover;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($brand-primary, 8%);
+  }
+}
+
+button.wpforms-submit {
+  background-color: $brand-primary-hover !important;
+  border: none !important;
+  border-radius: 5px !important;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($brand-primary, 8%) !important;
+  }
+}
+
+button.gs-button {
+  padding: 15px 15px;
+}
+
+//display: flex applied by 'agent-profile-ajax.js'
+.uploads-spinner {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000000000;
+  background-color: rgba(0,0,0,0.2);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  i {
+    font-size: 60px;
+    color: #FFF;
+  }
+}
+
+.mp-update-success {
+   display: none;
+}
+
+// .foundation-test-container {
+//   height: 500px;
+//   background: green;
+// }
