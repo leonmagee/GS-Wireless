@@ -19,14 +19,17 @@
 }
 
 .homepage-cta-wrap { 
-    $gutter_color: #EEE;
-    border-top: 5px solid $gutter_color;
+    //$gutter_color: #EEE;
+    $gutter_color: #222;
+    $gutter_width: 3px;
+    border-top: $gutter_width solid $gutter_color;
+    border-bottom: 1px solid #EEE;
     background-color: $gutter_color;
 
     @media(min-width: $screen-sm) {
         display: grid;
         grid-auto-flow: column;
-        grid-gap: 5px;
+        grid-gap: $gutter_width;
     }
     .cta-item {
 
@@ -56,6 +59,11 @@
             }
             &.h2o-bolt-plans {
                 background-color: #6C348D;
+            }
+            &.gs-accessories {
+                background-color: #33d8bd;
+                //background-image: url('../img/gplaypattern.png');
+                //background-size: 188px 178px;
             }
         }
     }

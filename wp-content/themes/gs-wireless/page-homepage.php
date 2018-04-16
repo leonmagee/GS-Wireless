@@ -55,11 +55,19 @@ get_header(); ?>
 
     foreach( $cta_boxes as $cta_box ) {
       $img_url = $cta_box['logo_image']['sizes']['large'];
-      $link = $cta_box['link']; ?>
+      $link = $cta_box['link']; 
+
+      if ( $link == 'gs-accessories' ) {
+        $link_url = 'https://mygsaccessories.com';
+      } else {
+        $link_url = site_url() . '/' . $link; 
+      }
+
+      ?>
 
       <div class="cta-item">
 
-        <a class="<?php echo $link; ?>" href="<?php echo site_url() . '/' . $link; ?>">
+        <a class="<?php echo $link; ?>" href="<?php echo $link_url; ?>">
           
           <img src="<?php echo $img_url; ?>" />
 

@@ -62,9 +62,26 @@
 
 							<ul id="first_name" class="menu">
 
-								<li><a href="/plan-info">Plan Info</a></li>
-								<li><a href="/about">GSW Info</a></li>
-								<li><a href="/contact">Dealers</a></li>
+								<li>
+									<a href="/plan-info">Plan Info <i class="fas fa-caret-down"></i></a>
+									<ul class="sub-menu">
+										<li><a href="<?php echo site_url(); ?>/lyca-mobile-plans">Lyca Mobile</a></li>
+										<li><a href="<?php echo site_url(); ?>/h2o-plans">H2O Unlimited</a></li>
+										<li><a href="<?php echo site_url(); ?>/h2o-plans">Easy Go Unlimited</a></li>
+										<li><a href="<?php echo site_url(); ?>/h2o-plans">Bolt 4G LTE</a></li>
+									</ul>
+
+								</li>
+								<li><a href="/about">GSW Info <i class="fas fa-caret-down"></i></a></li>
+								<li>
+									<a href="/contact">Dealers <i class="fas fa-caret-down"></i></a>
+
+									<ul class="sub-menu">
+										<li><a href="<?php echo site_url(); ?>/lyca-mobile-plans">Become a Dealer</a></li>
+										<li><a href="<?php echo site_url(); ?>/h2o-plans">GS Posa Sign Up</a></li>
+									</ul>
+
+								</li>
 
 								<?php if ( ! LV_LOGGED_IN_ID ) { ?>
 

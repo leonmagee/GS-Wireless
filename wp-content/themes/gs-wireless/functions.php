@@ -224,7 +224,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 function GS_Wireless_custom_scripts() {
 	
-		wp_register_style( 'font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css', array() );
+		wp_register_style( 'font-awesome', get_template_directory_uri() . '/vendor/font-awesome-5/css/fontawesome-all.min.css', array() );
 	
 		wp_enqueue_style( 'font-awesome' );
 	

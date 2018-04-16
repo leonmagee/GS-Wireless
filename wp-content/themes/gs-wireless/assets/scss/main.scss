@@ -1,10 +1,10 @@
 body.gs-wireless {
 
-  // font-family: 'Avenir', sans-serif;
-  // h1, h2, h3, h4, h5, a, p {
-
-  // font-family: 'Avenir', sans-serif;
-  // }
+  font-family: 'Myriad Pro', sans-serif;
+  h1, h2, h3, h4, h5, a, p {
+    
+    font-family: 'Myriad Pro', sans-serif;
+  }
 
   // hide lightbox caption
   .tos-caption-0 {
@@ -32,11 +32,13 @@ body.gs-wireless {
   * @todo add some media queries here so the max width is bigger for larger screens
   */
   .max-width-wrap {
-    max-width: 1200px;
+    //max-width: 1200px;
+    max-width: 84%;
     margin: 0 auto;
-    @media(min-width: $screen-xlg) {
-      max-width: 1500px;
-    }
+    // @media(min-width: $screen-xlg) {
+    //   max-width: 1500px;
+    //   max-width: 90%;
+    // }
   }
 
   .max-width-wrap-slider {

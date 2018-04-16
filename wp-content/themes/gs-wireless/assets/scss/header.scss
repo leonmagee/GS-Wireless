@@ -52,6 +52,42 @@ header#masthead {
     ul {
       width: 100%;
       margin: 0;
+      li {
+        position: relative;
+
+        a {
+          i {
+            color: #999;
+            margin-left: 2px;
+          }
+        }
+        ul.sub-menu {
+          list-style-type: none;
+          position: absolute;
+          z-index: 1000000;
+          top: 33px;
+          left: 3px;
+          background-color: #FFF;
+          border: 1px solid #DDD;
+          display: none;
+          li {
+            border: none;
+            a {
+              white-space: nowrap;
+
+              &:hover {
+                background-color: $brand-primary;
+                color: #FFF;
+              }
+            }
+          }
+        }
+        &:hover {
+          ul.sub-menu {
+            display: block;
+          }
+        }
+      }
     }
     @media(min-width: $screen-md) {
       justify-content: flex-end;
@@ -74,7 +110,8 @@ header#masthead {
         border: none;
       }
       a {
-        color: #333;
+        color: #222;
+        font-weight: 600;
         @media(min-width: $screen-sm) {
           font-size: 17px;
           @media(min-width: $screen-sm) {
@@ -82,7 +119,7 @@ header#masthead {
           }
         }
         &:hover {
-          color: $brand-primary-hover;
+          color: $brand-primary;
         }
       }
     }
