@@ -96,7 +96,9 @@
 
 								<?php } else { ?>
 
-								<li><a href="/xxx">Logged In Item</a></li>
+								<li>
+									<a href="<?php echo wp_logout_url( site_url() ); ?>">Log Out</a>
+								</li>
 
 								<?php } ?>
 
