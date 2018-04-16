@@ -19,7 +19,7 @@
 }
 
 .homepage-cta-wrap { 
-    $gutter_color: #BBB;
+    $gutter_color: #EEE;
     border-top: 5px solid $gutter_color;
     background-color: $gutter_color;
 
@@ -35,7 +35,7 @@
             justify-content: center;
             align-items: center;
             min-height: 180px;
-            background-color: #DDD;
+            //background-color: #000;
 
             img {
                 max-width: 200px;
@@ -45,13 +45,13 @@
                 opacity: 0.8;
             }
             &.lyca-mobile-plans {
+                background-color: #CFCFCF;
             }
             &.h2o-plans {
-                background-color: #fee633;
+                background-color: #FEE634; //#FEE634 //#FDE548
             }
             &.easy-go-plans {
                 background-color: #1A84BE;
-
             }
             &.h2o-bolt-plans {
                 background-color: #6C348D;
