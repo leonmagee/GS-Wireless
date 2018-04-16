@@ -29,7 +29,7 @@ get_header(); ?>
 
             <figure class="orbit-figure">
 
-              <div class="homepage-slide">
+              <div class="accessorie-slide">
 
                 <img src="<?php echo $slide['slide_image']['url']; ?>" />
 
@@ -45,30 +45,23 @@ get_header(); ?>
 
       </div>
 
+      <nav class="orbit-bullets">
+
+        <?php $counter = 0; foreach ( $slides as $slide ) { ?>
+
+        <button <?php if ($counter == 0) {echo 'class="is-active"';}?> data-slide="<?php echo $counter; ?>">
+          <span class="show-for-sr">Slide <?php echo ($counter + 1); ?> details.</span>
+        </button>
+
+        <?php $counter++; } ?>
+
+      </nav>
+
     </div>
 
   </div>
 
-  <div class="homepage-cta-wrap">
-
-    <?php $cta_boxes = get_field('cta_boxes', 'option'); 
-
-    foreach( $cta_boxes as $cta_box ) {
-      $img_url = $cta_box['logo_image']['sizes']['large'];
-      $link = $cta_box['link']; ?>
-
-      <div class="cta-item">
-
-        <a class="<?php echo $link; ?>" href="<?php echo site_url() . '/' . $link; ?>">
-          
-          <img src="<?php echo $img_url; ?>" />
-
-        </a>
-
-      </div>
-
-
-    <?php } ?>
+  <div class="homepage-slider-items">
 
   </div>
 

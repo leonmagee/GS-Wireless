@@ -1,3 +1,16 @@
+jQuery(document).foundation();
+// jQuery(document).foundation({
+//   orbit: {
+//     animation: 'slide',
+//     timer_speed: 1000,
+//     pause_on_hover: true,
+//     animation_speed: 500,
+//     navigation_arrows: true,
+//     bullets: false
+//   }
+// });
+
+
 jQuery(function ($) {
 
     //console.log('custom.js is loading');
@@ -5,7 +18,6 @@ jQuery(function ($) {
     $('.menu-toggle').click(function() {
         $('nav.main-navigation-custom').toggleClass('menu-hidden');
     });
-
 
     /**
     * Change Product Colors
@@ -79,6 +91,7 @@ jQuery(function ($) {
             $('.mp-required-fields').show();
         }
     });
+
 
 
 });
