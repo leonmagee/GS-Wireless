@@ -26,6 +26,24 @@
 
 		<header id="masthead" class="site-header cell">
 
+
+			<?php if ( LV_LOGGED_IN_ID ) { ?>
+
+			<div class="logged-in-bar">
+				<div class="max-width-wrap">
+
+					<div class="item">
+						Welcome <?php echo LV_LOGGED_IN_NAME; ?>!
+					</div>
+					<div class="item">
+						<a href="<?php echo wp_logout_url( site_url() ); ?>">Log Out</a>
+					</div>
+				</div>
+			</div>
+
+			<?php } ?>
+
+
 			<div class="max-width-wrap">
 
 				<div class="grid-x">
@@ -62,9 +80,9 @@
 
 							<ul id="first_name" class="menu">
 
-								<li><a href="/plan-info">Plan Info</a></li>
-								<li><a href="/about">GSW Info</a></li>
-								<li><a href="/contact">Dealers</a></li>
+								<li><a href="/products">Products</a></li>
+								<li><a href="/about">About</a></li>
+								<li><a href="/contact">Contact</a></li>
 
 								<?php if ( ! LV_LOGGED_IN_ID ) { ?>
 
@@ -79,7 +97,8 @@
 
 								<?php } else { ?>
 
-								<li><a href="/xxx">Logged In Item</a></li>
+								<li><a href="/place-your-order">Add to Order</a></li>
+								<li><a href="/cart">Cart</a></li>
 
 								<?php } ?>
 
