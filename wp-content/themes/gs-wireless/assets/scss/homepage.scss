@@ -20,14 +20,16 @@
 
 .homepage-cta-wrap { 
     //$gutter_color: #EEE;
-    $gutter_color: #222;
+    //$gutter_color: #222;
+    $gutter_color: #FFF;
     $gutter_width: 3px;
+    //padding: 20px 0;
     //border-top: $gutter_width solid $gutter_color;
-    border-top: 1px solid #222;
+    border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
     background-color: $gutter_color;
     //background-image: url('../img/gplaypattern.png');
-    background-image: url('../img/dark_embroidery.png');
+    //background-image: url('../img/dark_embroidery.png');
     //background-size: 188px 178px;
 
     @media(min-width: $screen-sm) {
@@ -42,18 +44,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 180px;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 25px auto;
+            background-color: #EEE;
+            border: 7px solid #CCC;
+
             &:hover {
                 //background-color: rgba(0,0,255,0.1);
-                background-color: rgba(255,255,255,0.07);
+                //background-color: rgba(255,255,255,0.07);
             }
             // background-color: #CCC;
             // border-radius: 40%;
             //background-color: #000;
 
             img {
-                max-width: 220px;
-                max-height: 105px;
+                // max-width: 220px;
+                // max-height: 105px;
             }
             &:hover {
                 opacity: 0.8;
