@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: H2O Plans
+ * Template Name: Easy Go Plans
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -19,11 +19,11 @@ $plans_array = get_field('plans', 'option'); ?>
 
 	<?php
 
-	$plan = $plans_array[0];
+	$plan = $plans_array[1];
 
 	$banner_image_logo = $plan['plan_logo']['sizes']['large']; ?>
 
-	<div class="plan-banner h2o-wireless">
+	<div class="plan-banner easygo">
 
 		<img src="<?php echo $banner_image_logo; ?>" />
 
