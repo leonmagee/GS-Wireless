@@ -80,6 +80,6 @@ get_header(); ?>
 
   </div>
 
-</div><!-- homepage outer wrap -->
+</div>
 
 <?php get_footer();

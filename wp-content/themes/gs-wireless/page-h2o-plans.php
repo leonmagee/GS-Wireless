@@ -22,7 +22,9 @@ $plans_array = get_field('plans', 'option');
 
 	<?php
 
-	foreach( $plans_array as $plan ) { 
+	//foreach( $plans_array as $plan ) { 
+
+		$plan = $plans_array[0];
 
 		$banner_image_logo = $plan['plan_logo']['sizes']['large']; ?>
 
@@ -100,7 +102,7 @@ $plans_array = get_field('plans', 'option');
 			</main><!-- #main -->
 		</div>
 
-		<?php } ?>
+		<?php //} ?>
 
 	</div><!-- #primary -->
 

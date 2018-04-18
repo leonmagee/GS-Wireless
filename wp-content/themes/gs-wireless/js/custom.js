@@ -1,19 +1,6 @@
 jQuery(document).foundation();
-// jQuery(document).foundation({
-//   orbit: {
-//     animation: 'slide',
-//     timer_speed: 1000,
-//     pause_on_hover: true,
-//     animation_speed: 500,
-//     navigation_arrows: true,
-//     bullets: false
-//   }
-// });
-
 
 jQuery(function ($) {
-
-    //console.log('custom.js is loading');
 
     $('.menu-toggle').click(function() {
         $('nav.main-navigation-custom').toggleClass('menu-hidden');
@@ -60,7 +47,6 @@ jQuery(function ($) {
             formdata.append("first_name", first_name);
             formdata.append("last_name", last_name);
             formdata.append("phone_number", phone_number);
-            //formdata.append("agency_name", agency_name);
             formdata.append("company", company);
             formdata.append("tin_ein_or_ssn", tin_ein_or_ssn);
 

@@ -12,7 +12,6 @@
 		padding: 15px 0;
 		border-bottom: 1px solid #DDD;
 		font-size: 22px;
-		//width: 100%;
 
 		.plan-details {
 
@@ -25,9 +24,10 @@
 			color: #333;
 
 			h4 {
-				font-size: 16px;
+				font-size: 17px;
 				font-weight: bold;
 				color: #111;
+				color: lighten($brand-second, 5%);
 				white-space: no-wrap;
 			}
 
