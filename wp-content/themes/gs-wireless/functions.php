@@ -256,7 +256,7 @@ function GS_Wireless_custom_scripts() {
 	//wp_enqueue_script( 'foundation-init-js' );
 
 	
-	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.0.1' );
+	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.0.2' );
 	
 	wp_enqueue_style( 'gs-wireless-styles' );
 
