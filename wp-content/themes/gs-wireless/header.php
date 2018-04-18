@@ -87,8 +87,8 @@
 									<a href="/contact">Dealers <i class="fas fa-caret-down"></i></a>
 
 									<ul class="sub-menu">
-										<li><a href="<?php echo site_url(); ?>/lyca-mobile-plans">Become a Dealer</a></li>
-										<li><a href="<?php echo site_url(); ?>/h2o-plans">GS Posa Sign Up</a></li>
+										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Become a Dealer</a></li>
+										<li><a href="<?php echo site_url(); ?>/gs-posa-sign-up">GS Posa Sign Up</a></li>
 									</ul>
 
 								</li>
