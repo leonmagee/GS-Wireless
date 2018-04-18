@@ -19,7 +19,7 @@ $plans_array = get_field('plans', 'option'); ?>
 
 	<?php
 
-	$plan = $plans_array[2];
+	$plan = $plans_array[3];
 
 	$banner_image_logo = $plan['plan_logo']['sizes']['large']; ?>
 
