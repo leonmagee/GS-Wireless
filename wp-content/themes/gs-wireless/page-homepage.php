@@ -82,7 +82,11 @@ get_header(); ?>
 
   <div class="gs-accessories-banner">
 
-    GS Accessories xxxx
+    <a href="https://mygsaccessories.com" target="_blank">
+      
+      <img src="<?php echo get_template_directory_uri() . '/assets/img/gs-accessories-banner.jpg'; ?>" />
+
+    </a>
 
   </div>
 
