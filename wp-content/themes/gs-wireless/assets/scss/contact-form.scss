@@ -5,7 +5,8 @@ body.gs-wireless {
 		border-radius: 5px;
 		border: 1px solid rgba(0,0,0,0.2);
 
-		#gform_fields_1, #gform_fields_17 {
+		//#gform_fields_1, #gform_fields_17 {
+		.gform_fields {
 
 			display: flex;
 			flex-wrap: wrap;
@@ -14,7 +15,7 @@ body.gs-wireless {
 				flex: 1 1 50%;
 				padding: 10px;
 
-				input, textarea {
+				input, textarea, select {
 					width: 100%;
 					border-radius: 3px;
 					margin-bottom: 0;
