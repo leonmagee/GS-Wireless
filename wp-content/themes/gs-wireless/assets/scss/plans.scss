@@ -26,8 +26,7 @@
 			h4 {
 				font-size: 17px;
 				font-weight: bold;
-				color: #111;
-				color: lighten($brand-second, 5%);
+				color: $brand-primary;
 				white-space: no-wrap;
 			}
 

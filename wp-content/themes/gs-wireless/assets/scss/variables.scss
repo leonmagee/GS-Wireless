@@ -1,6 +1,7 @@
-  $brand-primary: #0E509C;
-  $brand-primary-hover: darken($brand-primary, 15%);
+  //$brand-primary: #07A0C3;
+  //$brand-primary-hover: darken($brand-primary, 15%);
   $brand-second: #054E9E; // GS Blue
+  $brand-primary: lighten($brand-second, 12%);
   $brand-third: #76030F; // GS Red
   //$h2o_brand: yellow; //use background image for this to match color and slide
   $brand-easy-go: #1384BE;
