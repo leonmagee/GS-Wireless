@@ -68,7 +68,7 @@
 										<li><a href="<?php echo site_url(); ?>/lyca-mobile-plans">Lyca Mobile</a></li>
 										<li><a href="<?php echo site_url(); ?>/h2o-plans">H2O Unlimited</a></li>
 										<li><a href="<?php echo site_url(); ?>/easy-go-plans">Easy Go Unlimited</a></li>
-										<li><a href="<?php echo site_url(); ?>/h2o-plans">Bolt 4G LTE</a></li>
+										<li><a href="<?php echo site_url(); ?>/h2o-bolt-plans">Bolt 4G LTE</a></li>
 									</ul>
 
 								</li>
