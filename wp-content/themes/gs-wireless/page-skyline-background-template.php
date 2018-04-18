@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Page
+ * Template Name: Skyline Background
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area about-page-content-bg">
+	<div id="primary" class="content-area skyline-bg">
 		<div class="max-width-wrap">
 			<main id="main" class="site-main">
 
