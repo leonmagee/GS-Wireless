@@ -63,7 +63,7 @@
 							<ul id="first_name" class="menu">
 
 								<li>
-									<a href="/plan-info">Plan Info <i class="fas fa-caret-down"></i></a>
+									<a href="#">Plan Info <i class="fas fa-caret-down"></i></a>
 									<ul class="sub-menu">
 										<li><a href="<?php echo site_url(); ?>/lyca-mobile-plans">Lyca Mobile</a></li>
 										<li><a href="<?php echo site_url(); ?>/h2o-plans">H2O Unlimited</a></li>
@@ -74,7 +74,7 @@
 								</li>
 
 								<li>
-									<a href="/about">GSW Info <i class="fas fa-caret-down"></i></a>
+									<a href="#">GSW Info <i class="fas fa-caret-down"></i></a>
 
 									<ul class="sub-menu">
 										<li><a href="<?php echo site_url(); ?>/about-us">About Us</a></li>
@@ -84,7 +84,7 @@
 								</li>
 
 								<li>
-									<a href="/contact">Dealers <i class="fas fa-caret-down"></i></a>
+									<a href="#">Dealers <i class="fas fa-caret-down"></i></a>
 
 									<ul class="sub-menu">
 										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Become a Dealer</a></li>
