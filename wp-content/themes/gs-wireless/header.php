@@ -72,7 +72,17 @@
 									</ul>
 
 								</li>
-								<li><a href="/about">GSW Info <i class="fas fa-caret-down"></i></a></li>
+
+								<li>
+									<a href="/about">GSW Info <i class="fas fa-caret-down"></i></a>
+
+									<ul class="sub-menu">
+										<li><a href="<?php echo site_url(); ?>/about-us">About Us</a></li>
+										<li><a href="<?php echo site_url(); ?>/contact-us">Contact Us</a></li>
+									</ul>
+
+								</li>
+
 								<li>
 									<a href="/contact">Dealers <i class="fas fa-caret-down"></i></a>
 

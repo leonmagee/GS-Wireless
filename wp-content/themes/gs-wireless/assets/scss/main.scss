@@ -57,6 +57,13 @@ body.gs-wireless {
     @media( min-width: $screen-md) {
       padding: 0;
     }
+
+    h3 {
+      color: $brand-primary;
+      font-weight: 600;
+      margin-bottom: 0;
+      font-size: 23px;
+    }
   }
 
   // .body-inner-wrap {

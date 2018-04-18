@@ -80,6 +80,12 @@ get_header(); ?>
 
   </div>
 
+  <div class="gs-accessories-banner">
+
+    GS Accessories xxxx
+
+  </div>
+
 </div>
 
 <?php get_footer();
