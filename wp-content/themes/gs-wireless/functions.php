@@ -213,7 +213,7 @@ function GS_Wireless_custom_scripts() {
 
 		//wp_register_script( 'isotope-js', get_template_directory_uri() . '/vendor/isotope/isotope.js', '', '3.0.5', true );
 
-	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery', 'foundation-js'), '1.0.5', true );
+	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery', 'foundation-js'), '1.1.2', true );
 
 		//wp_register_script( 'isotope-custom-js', get_template_directory_uri() . '/js/isotope.js', array('jquery', 'isotope-js'), '1.0.2', true );
 
@@ -227,7 +227,7 @@ function GS_Wireless_custom_scripts() {
 	//wp_enqueue_script( 'foundation-init-js' );
 
 	
-	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.1.1' );
+	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.1.2' );
 	
 	wp_enqueue_style( 'gs-wireless-styles' );
 

@@ -11,7 +11,10 @@
 		display: flex;
 		padding: 15px 0;
 		border-bottom: 1px solid #DDD;
-		font-size: 22px;
+		font-size: 11px;
+		@media(min-width: $screen-sm) {
+			font-size: 22px;
+		}
 
 		.plan-details {
 
@@ -24,10 +27,14 @@
 			color: #333;
 
 			h4 {
-				font-size: 17px;
+				font-size: 11px;
 				font-weight: bold;
 				color: $brand-primary;
 				white-space: no-wrap;
+
+				@media(min-width: $screen-md) {
+					font-size: 17px;
+				}
 			}
 
 			&.month-plan {
@@ -35,19 +42,32 @@
 
 				span.price {
 					font-weight: 800;
-					font-size: 70px;
-					line-height: 30px;
+					font-size: 30px;
+					line-height: 20px;
 					margin-top: 20px;
+					@media(min-width: $screen-sm) {
+						
+					}
+					@media(min-width: $screen-md) {
+						font-size: 70px;
+						line-height: 30px;
+					}
 					//width: 100%;
 					span {
 						color: #777;
-						font-size: 30px;
+						font-size: 20px;
+						@media(min-width: $screen-md) {
+							font-size: 30px;
+						}
 					}
 				}
 
 				span.per {
 					color: #AAA;
-					font-size: 14px;
+					font-size: 8px;
+					@media(min-width: $screen-md) {
+						font-size: 14px;
+					}
 					//width: 100%;
 				}
 
@@ -58,7 +78,11 @@
 			}
 
 			&.lte-data {
-				font-size: 18px;
+				font-size: 12px;
+				//white-space: nowrap;
+				@media(min-width: $screen-md) {
+					font-size: 18px;
+				}
 			}
 
 			&.int-talk-text {

@@ -32,9 +32,11 @@ body.gs-wireless {
   * @todo add some media queries here so the max width is bigger for larger screens
   */
   .max-width-wrap {
+    @media(min-width: $screen-md) {
+      max-width: 84%;
+      margin: 0 auto;
+    }
     //max-width: 1200px;
-    max-width: 84%;
-    margin: 0 auto;
     // @media(min-width: $screen-xlg) {
     //   max-width: 1500px;
     //   max-width: 90%;

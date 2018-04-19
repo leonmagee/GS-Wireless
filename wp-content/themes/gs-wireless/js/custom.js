@@ -6,4 +6,9 @@ jQuery(function ($) {
         $('nav.main-navigation-custom').toggleClass('menu-hidden');
     });
 
+
+    $('#site-navigation-custom li').click(function() {
+        $(this).toggleClass('active-nav');
+    });
+
 });
