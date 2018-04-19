@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Us
+ * Template Name: Deprecated
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

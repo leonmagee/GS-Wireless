@@ -2,8 +2,6 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package GS_Wireless
@@ -93,55 +91,16 @@
 
 								</li>
 
-								<?php if ( ! LV_LOGGED_IN_ID ) { ?>
-
-								<li>
-									<a data-open="login-modal">
-										Log In
-										<sep>/</sep>
-										Sign Up
-									</a>
-								</li>
-
-
-								<?php } else { ?>
-
-								<li>
-									<a href="<?php echo wp_logout_url( site_url() ); ?>">Log Out</a>
-								</li>
-
-								<?php } ?>
-
 							</ul>
 
-
-
-
-							<?php
-					// wp_nav_menu( array(
-					// 	'theme_location' => 'menu-1',
-					// 	'menu_id'        => 'primary-menu',
-					// ) );
-							?>
-						</nav><!-- #site-navigation -->
+						</nav>
 
 					</div>
 
 				</div>
+
 			</div>
 
-			<?php
-		/**
-		 *  Login Modal
-		 */
-		$log_in_modal = new mp_output_modal_login(
-			'login-modal',
-			'Log In',
-			true
-		);
-		$log_in_modal->output_modal();
-		?>
-
-	</header><!-- #masthead -->
+	</header>
 
 	<div class="main-content-wrap cell">

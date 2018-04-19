@@ -10,22 +10,7 @@
  /**
   * Add Files
   **/
- require_once('lib/helper-functions.php');
- require_once('lib/generate-custom-post-type.php');
- function mm_register_post_types() {
- 	md_create_wp_cpt::create_post_type( 'accessories', 'Accessory', 'Accessories', 'accessories', 'smartphone' );
- }
- add_action( 'init', 'mm_register_post_types' );
-
- require_once('lib/shopping_cart.php');
- require_once('lib/process-form-submission.php');
- require_once('lib/output-modal-login.php');
- require_once('lib/lv-register-user.php');
- require_once('lib/lv-send-email-misc.php');
- require_once('lib/lv-ajax.php');
-
- session_start();
-
+ //require_once('lib/helper-functions.php');
 
 /**
 * test user meta
@@ -242,7 +227,7 @@ function GS_Wireless_custom_scripts() {
 
 		//wp_register_script( 'isotope-js', get_template_directory_uri() . '/vendor/isotope/isotope.js', '', '3.0.5', true );
 
-	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery', 'foundation-js'), '1.0.4', true );
+	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery', 'foundation-js'), '1.0.5', true );
 
 		//wp_register_script( 'isotope-custom-js', get_template_directory_uri() . '/js/isotope.js', array('jquery', 'isotope-js'), '1.0.2', true );
 
