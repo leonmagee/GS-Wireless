@@ -30,20 +30,27 @@ body.gs-wireless {
 
     h1.entry-title {
         margin: 0 0 15px 0;
-            //border-bottom: 2px solid lighen($brand-second, 5%);
-            border-bottom: 4px double #CCC;
-            padding-bottom: 3px;
-            line-height: 1em;
-            font-size: 27px;
-            //text-transform: uppercase;
-            text-align: center;
-            @media( min-width: $screen-sm) {
-                font-size: 36px;
-                text-align: left;
-            }
+        border-bottom: 4px double #CCC;
+        padding-bottom: 3px;
+        line-height: 1em;
+        font-size: 27px;
+        text-align: center;
+        @media( min-width: $screen-sm) {
+            font-size: 36px;
+            text-align: left;
         }
-
-
-
-
     }
+
+    .video-embed-wraps {
+        @media(min-width: $screen-md) {
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-flow: column;
+        }
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
