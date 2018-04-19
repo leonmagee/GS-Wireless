@@ -4,6 +4,8 @@ body.gs-wireless {
 
 		border-radius: 5px;
 		border: 1px solid rgba(0,0,0,0.2);
+		color: #222;
+		font-size: 20px;
 
 		//#gform_fields_1, #gform_fields_17 {
 		.gform_fields {
@@ -22,6 +24,16 @@ body.gs-wireless {
 				}
 
 			}
+
+			label.gfield_label {
+				color: #111;
+				font-size: 18px;
+				margin-bottom: 0;
+				span.gfield_required {
+					color: $brand-third;
+				}
+			}
+
 			
 		}
 
