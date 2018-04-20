@@ -1,5 +1,5 @@
 .homepage-outer-wrap {
-    flex: 1;
+    //flex: 1;
 }
 
 .homepage-wrap {
@@ -19,27 +19,19 @@
 }
 
 .homepage-cta-wrap { 
-    //$gutter_color: #EEE;
-    //$gutter_color: #222;
     padding: 0 7%;
     $gutter_color: #FFF;
-    $gutter_width: 3px;
-    //padding: 20px 0;
-    //border-top: $gutter_width solid $gutter_color;
+    $gutter_width: 20px;
     border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
     background-color: $gutter_color;
-    //background-image: url('../img/gplaypattern.png');
-    //background-size: 188px 178px;
     background-image: url('../img/asanoha-400px.png');
     background-size: 200px 173.5px;
-    //background-image: url('../img/dark_embroidery.png');
 
     @media(min-width: $screen-sm) {
         display: grid;
         grid-auto-flow: column;
         grid-gap: $gutter_width;
-        //grid-gap: 40px;
     }
     .cta-item {
 
@@ -49,47 +41,41 @@
             align-items: center;
             height: 220px;
             width: 220px;
-            // height: 200px;
-            // width: 200px;
             border-radius: 50%;
             padding: 20px;
             margin: 25px auto;
             background-color: #F2F2F3;
             border: 4px solid #CCC;
 
-            &:hover {
-                //background-color: rgba(0,0,255,0.1);
-                //background-color: rgba(255,255,255,0.07);
+            @media(min-width: $screen-sm) {
+                height: 140px;
+                width: 140px; 
+                padding: 13px;
             }
-            // background-color: #CCC;
-            // border-radius: 40%;
-            //background-color: #000;
 
-            img {
-                // max-width: 220px;
-                // max-height: 105px;
+            @media(min-width: $screen-md) {
+                height: 200px;
+                width: 200px;
+                padding: 18px;
             }
+
+            @media(min-width: $screen-lg) {
+                height: 220px;
+                width: 220px;
+                padding: 20px;
+            }
+
             &:hover {
                 opacity: 0.8;
             }
             &.lyca-mobile-plans {
-                //background-color: #CFCFCF;
             }
             &.h2o-plans {
-                //background-color: #FEE634;
-                //background-image: url('../img/h2o-bg-color.png');
             }
             &.easy-go-plans {
-                //background-color: #1A84BE;
             }
             &.h2o-bolt-plans {
-                //background-color: #6C348D;
             }
-            // &.gs-accessories {
-            //     background-color: #33d8bd;
-            //     //background-image: url('../img/gplaypattern.png');
-            //     //background-size: 188px 178px;
-            // }
         }
     }
 }

@@ -7,53 +7,6 @@
  * @package GS_Wireless
  */
 
- /**
-  * Add Files
-  **/
- //require_once('lib/helper-functions.php');
-
-/**
-* test user meta
-*/
-
-//add_user_meta( $user_id, $meta_key, $meta_value, $unique ); 
-add_user_meta(8, 'tin_ein_or_ssn', 'testingzzz');
-
-
-/**
- * Constants
- * @todo move to different file
- */
-if ( is_user_logged_in() ) {
-	$user    = wp_get_current_user(); // @todo search for this to replace with constant
-	$user_id = $user->ID;
-	//var_dump($user_id);
-	$first_name = get_user_meta($user_id, 'first_name', true);
-	$last_name = get_user_meta($user_id, 'last_name', true);
-	//var_dump($first_name . ' ' . $last_name);
-	define('LV_LOGGED_IN_NAME', $first_name . ' ' . $last_name);
-	define( 'LV_LOGGED_IN_ID', $user_id );
-} else {
-	//var_dump('user not logged in');
-	define( 'LV_LOGGED_IN_ID', false );
-}
-
-function restricted_page() {
-	if ( ! is_user_logged_in() ) {
-		wp_redirect('/');
-		exit;
-	}
-}
-
-function unrestricted_page() {
-	if ( is_user_logged_in() ) {
-		wp_redirect('/');
-		exit;
-	}
-}
-
-
-
  if ( ! function_exists( 'GS_Wireless_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -198,46 +151,21 @@ function GS_Wireless_custom_scripts() {
 		wp_register_style( 'font-awesome', get_template_directory_uri() . '/vendor/font-awesome-5/css/fontawesome-all.min.css', array() );
 	
 		wp_enqueue_style( 'font-awesome' );
-	
-		// $google_font_black_ops_one = 'https://fonts.googleapis.com/css?family=Black+Ops+One';
-	
-		// //$google_font_exo = 'https://fonts.googleapis.com/css?family=Exo:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
-	
-		// wp_register_style( 'google-fonts-black-ops-one', $google_font_black_ops_one, '', '1.0.1' );
-	
-		// wp_enqueue_style( 'google-fonts-black-ops-one' );
 
 	wp_register_style( 'foundation-css', get_template_directory_uri() . '/vendor/foundation/css/foundation.min.css', '', '1.0.1' );
 
 	wp_enqueue_style( 'foundation-css' );
 
-		//wp_register_script( 'isotope-js', get_template_directory_uri() . '/vendor/isotope/isotope.js', '', '3.0.5', true );
-
 	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery', 'foundation-js'), '1.1.2', true );
-
-		//wp_register_script( 'isotope-custom-js', get_template_directory_uri() . '/js/isotope.js', array('jquery', 'isotope-js'), '1.0.2', true );
 
 	wp_enqueue_script( 'custom-js');
 
 
 	wp_register_script( 'foundation-js', get_template_directory_uri() . '/vendor/foundation/js/vendor/foundation.min.js', '', '1.0.1' );
 
-	//wp_register_script( 'foundation-init-js', get_template_directory_uri() . '/vendor/foundation/js/app.js', array('jquery','foundation-js'), '1.0.2', true );
-
-	//wp_enqueue_script( 'foundation-init-js' );
-
-	
-	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.1.3' );
+	wp_register_style( 'gs-wireless-styles', get_template_directory_uri() . '/assets/css/main.min.css', '', '1.1.4' );
 	
 	wp_enqueue_style( 'gs-wireless-styles' );
-
-	// if ( is_page('Products') ) {
-	// 	wp_register_script( 'isotope-js', get_template_directory_uri() . '/vendor/isotope/isotope.js', '', '3.0.5', true );
-
-	// 	wp_register_script( 'isotope-custom-js', get_template_directory_uri() . '/js/isotope.js', array('jquery', 'isotope-js'), '1.0.2', true );
-
-	// 	wp_enqueue_script( 'isotope-custom-js');
-	// }
 }
 
 add_action( 'wp_enqueue_scripts', 'GS_Wireless_custom_scripts' );
@@ -262,28 +190,11 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 /**
 * Add Image Sizes
 */
-function GS_Wireless_image_sizes() {
-	add_image_size('cats_image', 500, 250, true);
-	add_image_size('accessory_image', 800, 800, true);
-}
+// function GS_Wireless_image_sizes() {
+// 	add_image_size('cats_image', 500, 250, true);
+// }
 
-add_action('init', 'GS_Wireless_image_sizes');
-
-
-
-/**
- * Redirect non admin users to front page
- */
-
-add_action( 'admin_init', 'non_admin_users_redirect' );
-
-function non_admin_users_redirect() {
-
-	if ( ! current_user_can( 'level_5' ) ) {
-
-		wp_redirect( site_url() );
-	}
-}
+//add_action('init', 'GS_Wireless_image_sizes');
 
 
 /**
@@ -295,9 +206,4 @@ function remove_admin_bar() {
 	if (!is_admin()) {
 	  show_admin_bar(false);
 	}
-// if (!current_user_can('administrator') && !is_admin()) {
-//   show_admin_bar(false);
-// }
 }
-	
-	
