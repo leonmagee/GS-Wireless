@@ -13,13 +13,13 @@ get_header();
 * @todo this will be a unique template, probably don't want the normal template wrapping
 */
 
-$plans_array = get_field('plans', 'option'); ?>
+$plans_array = get_field('prepaid_plans', 'option'); ?>
 
 <div id="primary" class="content-area-plans">
 
 	<?php
 
-	$plan = $plans_array[4];
+	$plan = $plans_array[0];
 
 	$banner_image_logo = $plan['plan_logo']['sizes']['large']; ?>
 
@@ -39,20 +39,17 @@ $plans_array = get_field('plans', 'option'); ?>
 					<div class="plan-details month-plan">
 						<h4>Monthly Plan</h4>
 					</div>
-					<div class="plan-details nation-talk-text">
-						<h4>Nationwide Talk & Text</h4>
+					<div class="plan-details talk-text">
+						<h4>Talk & Text</h4>
 					</div>
-					<div class="plan-details lte-data">
-						<h4>4G LTE Data</h4>
+					<div class="plan-details mms">
+						<h4>MMS</h4>
 					</div>
-					<div class="plan-details int-talk-text">
-						<h4>Int'l Talk & Text</h4>
+					<div class="plan-details data">
+						<h4>Data</h4>
 					</div>
-					<div class="plan-details intl-minutes">
-						<h4>Bonus Int'l Minutes</h4>
-					</div>
-					<div class="plan-details intl-credit">
-						<h4>Bonut Int'l Credit</h4>
+					<div class="plan-details expiration">
+						<h4>Expiration</h4>
 					</div>
 				</div>
 
@@ -65,20 +62,17 @@ $plans_array = get_field('plans', 'option'); ?>
 						<span class="price"><span>$</span><?php echo $plan_details['monthly_plan']; ?></span>
 						<span class="per">/per month</span>
 					</div>
-					<div class="plan-details nation-talk-text">
-						<?php echo $plan_details['nationwide_talk_&_text']; ?>
+					<div class="plan-details talk-text">
+						<?php echo $plan_details['talk_&_text']; ?>
 					</div>
-					<div class="plan-details lte-data">
-						<?php echo $plan_details['4g_lte_data']; ?>
+					<div class="plan-details mms">
+						<?php echo $plan_details['mms']; ?>
 					</div>
-					<div class="plan-details int-talk-text">
-						<?php echo $plan_details['intl_talk_&_text']; ?>
+					<div class="plan-details data">
+						<?php echo $plan_details['data']; ?>
 					</div>
-					<div class="plan-details intl-minutes">
-						<?php echo $plan_details['bonus_intl_minutes']; ?>
-					</div>
-					<div class="plan-details intl-credit">
-						<?php echo $plan_details['bonus_intl_credit']; ?>
+					<div class="plan-details expiration">
+						<?php echo $plan_details['expiration']; ?>
 					</div>
 				</div>
 
