@@ -6,41 +6,23 @@ body.gs-wireless {
     font-family: 'Myriad Pro', sans-serif;
   }
 
-  // hide lightbox caption
-  .tos-caption-0 {
-    //opacity: 0;
-    display: none;
-  }
+  // .tos-caption-0 {
+  //   display: none;
+  // }
 
   .main-grid-wrap {
     min-height: 100vh;
   }
 
-  &.home {
-    //background-image: url('../img/pexels-phone-map-opt.jpg');
-    //background-size: cover;
-  }
   h1 {
     font-weight: 500;
   }
 
-  //background-color: $brand-primary;
-  //margin: 0;
-
-
-  /** 
-  * @todo add some media queries here so the max width is bigger for larger screens
-  */
   .max-width-wrap {
     @media(min-width: $screen-md) {
       max-width: 84%;
       margin: 0 auto;
     }
-    //max-width: 1200px;
-    // @media(min-width: $screen-xlg) {
-    //   max-width: 1500px;
-    //   max-width: 90%;
-    // }
   }
 
   .max-width-wrap-slider {
@@ -51,7 +33,6 @@ body.gs-wireless {
   .main-content-wrap {
     flex: 1;
     display: flex;
-    //min-height: 300px;
   }
 
   .entry-content {
@@ -67,25 +48,6 @@ body.gs-wireless {
       font-size: 23px;
     }
   }
-
-  // .body-inner-wrap {
-
-  //   // max-width: 1200px;
-  //   // margin: 0 auto;
-
-  //   .main-content-wrap {
-  //     //min-height: 300px;
-  //   }
-  // }
-
-  // div#page {
-  //   min-height: 100vh;
-  //   display: flex;
-  //   flex-direction: column;
-  //   div#content {
-  //     flex: 1;
-  //   }
-  // }
 
   h1, h2, h3, h4, h5 {
     
@@ -120,7 +82,6 @@ a.gs-button, button.gs-button, button.wpforms-submit, input.gform_button.button 
   font-weight: 600;
   padding: 5px 15px;
   font-size: 20px;
-  //border: 2px solid $brand-primary-hover;
   border-radius: 5px;
   &:hover {
     cursor: pointer;
@@ -148,28 +109,3 @@ button.wpforms-submit {
 button.gs-button {
   padding: 15px 15px;
 }
-
-//display: flex applied by 'agent-profile-ajax.js'
-.uploads-spinner {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 10000000000;
-  background-color: rgba(0,0,0,0.2);
-  justify-content: center;
-  align-items: center;
-  display: none;
-  i {
-    font-size: 60px;
-    color: #FFF;
-  }
-}
-
-.mp-update-success {
-   display: none;
-}
-
-// .foundation-test-container {
-//   height: 500px;
-//   background: green;
-// }

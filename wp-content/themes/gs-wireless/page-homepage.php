@@ -80,11 +80,19 @@ get_header(); ?>
 
   </div>
 
+  <div class="gs-text-banner">
+    
+    <h1>Sign Up with GS Wireless & we guarantee your satisfaction!</h1>
+
+    <h2>We’re confident that once you start working with us, you won’t want to stop.</h2>
+
+  </div>
+
   <div class="gs-accessories-banner">
 
     <a href="https://mygsaccessories.com" target="_blank">
       
-      <img src="<?php echo get_template_directory_uri() . '/assets/img/gs-accessories-banner.jpg'; ?>" />
+      <img src="<?php echo get_template_directory_uri() . '/assets/img/gs-accessories-banner-2.png'; ?>" />
 
     </a>
 

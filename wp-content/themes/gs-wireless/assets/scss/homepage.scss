@@ -80,19 +80,42 @@
     }
 }
 
-.gs-accessories-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 15px;
-    a {
-        border-radius: 500px;
-        overflow: hidden;
-        border: 4px solid #CCC;
-
-        @media(min-width: $screen-sm) {
-            max-width: 60%;
+.gs-text-banner {
+    padding: 30px 25px;
+    background-color: #EEE;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    @media(min-width: $screen-md) {
+        padding: 50px 10%;
+    }
+    h1 {
+        font-weight: 800 !important;
+        font-size: 30px;
+        color: #111;
+        text-shadow: 1px 1px #F7F7F7;
+        text-align: center;
+        @media(min-width: $screen-md) {
+            font-size: 40px;
         }
+    }
+    h2 {
+        font-weight: 800;
+        text-shadow: 1px 1px #F7F7F7;
+        color: #222;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        @media(min-width: $screen-md) {
+            font-size: 30px;
+        }
+    }
+}
+
+.gs-accessories-banner {
+
+    background-image: url('../img/asanoha-400px.png');
+    background-size: 200px 173.5px;
+    a {
 
         &:hover {
             opacity: 0.8;
@@ -103,3 +126,27 @@
         }
     }
 }
+
+// .gs-accessories-banner {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 80px 15px;
+//     a {
+//         border-radius: 500px;
+//         overflow: hidden;
+//         border: 4px solid #CCC;
+
+//         @media(min-width: $screen-sm) {
+//             max-width: 60%;
+//         }
+
+//         &:hover {
+//             opacity: 0.8;
+//         }
+
+//         &:focus {
+//             outline: none;
+//         }
+//     }
+// }
