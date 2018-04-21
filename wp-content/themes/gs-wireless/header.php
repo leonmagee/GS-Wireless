@@ -59,7 +59,7 @@
 
 						<nav id="site-navigation-custom" class="main-navigation-custom menu-hidden">
 
-							<ul id="first_name" class="menu">
+							<ul class="menu">
 
 								<li>
 									<a href="#">Plan Info <i class="fas fa-caret-down"></i></a>
