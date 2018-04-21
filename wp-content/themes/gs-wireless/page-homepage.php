@@ -80,11 +80,19 @@ get_header(); ?>
 
   </div>
 
-  <div class="gs-text-banner">
-    
-    <h1>Sign Up with GS Wireless & we guarantee your satisfaction!</h1>
+  <div class="gs-homepage-content">
 
-    <h2>We’re confident that once you start working with us, you won’t want to stop.</h2>
+      <div class="max-width-wrap">
+
+        <?php
+        while ( have_posts() ) : the_post();
+
+          the_content();
+
+        endwhile;
+        ?>
+
+    </div> 
 
   </div>
 
