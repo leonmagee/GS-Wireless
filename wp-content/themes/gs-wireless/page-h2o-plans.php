@@ -86,6 +86,8 @@ $plans_array = get_field('plans', 'option'); ?>
 
 			</div>
 
+			<?php get_template_part('template-parts/flag-modals'); ?>
+
 		</main><!-- #main -->
 
 	</div>

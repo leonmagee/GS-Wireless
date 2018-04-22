@@ -109,3 +109,38 @@ button.wpforms-submit {
 button.gs-button {
   padding: 15px 15px;
 }
+
+
+// country flags
+
+ul.info-list{
+  columns: 2;
+  -webkit-columns: 2;
+}
+
+ul.info-list li{
+  list-style: none;
+}
+
+ul.flags-list{
+  columns:  2;
+  -webkit-columns: 3;
+}
+
+ul.flags-list li {
+    list-style: none;
+    width: 150px;
+}
+
+ul.flags-list li:hover{
+  background: #f1f1f1;
+}
+
+ul.flags-list p {
+  padding-left: 3px;
+  font-family: sansation_lightregular; }
+
+ul.info-list p{font-family: sansation_lightregular;}
+ul.info-list li:hover{background:transparent;}
+
+
