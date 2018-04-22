@@ -78,7 +78,7 @@
 
 									<ul class="sub-menu">
 										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Become a Dealer</a></li>
-										<li><a href="<?php echo site_url(); ?>/gs-posa-sign-up">GS Posa Sign Up</a></li>
+										<li><a href="<?php echo site_url(); ?>/sign-up-for-gs-posa">Sign Up For GS POSA</a></li>
 									</ul>
 
 								</li>
