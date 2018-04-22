@@ -7,7 +7,6 @@ body.gs-wireless {
 		color: #222;
 		font-size: 20px;
 
-		//#gform_fields_1, #gform_fields_17 {
 		.gform_fields {
 
 			display: flex;
@@ -28,7 +27,7 @@ body.gs-wireless {
 
 			}
 
-			li#field_27_13, li#field_28_13 {
+			li.flex-100-width {
 				flex: 1 1 100%;
 			}
 
@@ -43,76 +42,6 @@ body.gs-wireless {
 
 			
 		}
-
-
-
-		// div.wpforms-container-full {
-
-		// 	.wpforms-form {
-
-		// 		.name-field, .email-field, .comments-field, .company-field, .tin-ein-ssn-field {
-
-		// 			&:before {
-		// 				font-family: FontAwesome;
-		// 				color: darken( $brand-primary, 15%);
-		// 				float: left;
-		// 				font-size: 25px;
-		// 				line-height: 22px;
-		// 				margin-right: 8px;
-		// 				margin-bottom: 9px;
-		// 			}
-
-		// 		}
-
-		// 		.name-field {
-
-		// 			@media(min-width: $screen-sm) {
-		// 				width: 48%;
-		// 				float: left;
-		// 				clear: none;
-		// 			}
-
-		// 			&:before {
-		// 				content: "\f2be";
-		// 			}
-		// 		}
-	
-		// 		.company-field {
-		// 			@media(min-width: $screen-sm) {
-		// 				width: 48%;
-		// 				float: right;
-		// 				clear: none;
-		// 				margin-right: 1px;
-		// 			}
-		// 			&:before {
-		// 				content: "\f0f7";
-		// 			}
-		// 		}
-
-		// 		.email-field {
-		// 			&:before {
-		// 				content: "\f003";
-		// 			}
-		// 		}
-
-		// 		// .tin-ein-ssn-field {
-		// 		// 	&:before {
-		// 		// 		content: "\f2c3";
-		// 		// 	}
-		// 		// }
-
-		// 		.comments-field {
-		// 			&:before {
-		// 				content: "\f27b";
-		// 			}
-		// 		}
-
-		// 		label.wpforms-field-label {
-		// 			line-height: 22px !important;
-		// 		}
-
-		// 	}
-		// }
 	}
 }
 

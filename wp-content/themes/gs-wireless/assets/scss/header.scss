@@ -58,7 +58,11 @@ header#masthead {
         a {
           i {
             color: #999;
-            margin-left: 2px;
+            margin-left: 5px;
+            &.icon-hidden {
+              width: 0;
+              opacity: 0;
+            }
           }
         }
         ul.sub-menu {
@@ -145,7 +149,6 @@ header#masthead {
       z-index: 10000000;
     }
   }
-
 
 
 
