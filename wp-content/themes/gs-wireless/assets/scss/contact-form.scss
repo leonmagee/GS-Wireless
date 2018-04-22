@@ -27,8 +27,9 @@ body.gs-wireless {
 
 			}
 
-			li.flex-33-width {
+			li.flex-33-width { // just file uploads
 				flex: 1 1 33.3%;
+				font-size: 0.7em;
 			}
 
 			li.flex-100-width {
@@ -40,7 +41,7 @@ body.gs-wireless {
 				font-size: 18px;
 				margin-bottom: 0;
 				span.gfield_required {
-					color: $brand-third;
+					color: lighten($brand-third, 7%);
 				}
 			}
 
