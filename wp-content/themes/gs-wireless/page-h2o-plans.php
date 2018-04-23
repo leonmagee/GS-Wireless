@@ -56,7 +56,6 @@ $plans_array = get_field('plans', 'option'); ?>
 					</div>
 				</div>
 
-
 				<?php foreach( $plan['plans'] as $plan_details ) { ?>
 
 				<div class="plan-details-wrap">
@@ -75,7 +74,10 @@ $plans_array = get_field('plans', 'option'); ?>
 						<?php echo $plan_details['intl_talk_&_text']; ?>
 					</div>
 					<div class="plan-details intl-minutes">
-						<?php echo $plan_details['bonus_intl_minutes']; ?>
+
+						<?php $flag_reveal = 'Reveal' . str_replace(array(' ', '+'), '', $plan_details['bonus_intl_minutes']); ?>
+
+						<a data-open="<?php echo $flag_reveal; ?>"><?php echo $plan_details['bonus_intl_minutes']; ?></a>
 					</div>
 					<div class="plan-details intl-credit">
 						<?php echo $plan_details['bonus_intl_credit']; ?>

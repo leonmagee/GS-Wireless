@@ -75,7 +75,10 @@ $plans_array = get_field('plans', 'option'); ?>
 						<?php echo $plan_details['intl_talk_&_text']; ?>
 					</div>
 					<div class="plan-details intl-minutes">
-						<?php echo $plan_details['bonus_intl_minutes']; ?>
+
+						<?php $flag_reveal = 'Reveal' . str_replace(array(' ', '+'), '', $plan_details['bonus_intl_minutes']); ?>
+
+						<a data-open="<?php echo $flag_reveal; ?>"><?php echo $plan_details['bonus_intl_minutes']; ?></a>
 					</div>
 					<div class="plan-details intl-credit">
 						<?php echo $plan_details['bonus_intl_credit']; ?>
@@ -85,6 +88,8 @@ $plans_array = get_field('plans', 'option'); ?>
 				<?php } ?>
 
 			</div>
+
+			<?php get_template_part('template-parts/flag-modals'); ?>
 
 		</main><!-- #main -->
 
