@@ -28,8 +28,14 @@ body.gs-wireless {
 			}
 
 			li.flex-33-width { // just file uploads
-				flex: 1 1 33.3%;
-				font-size: 0.7em;
+				font-size: 0.8em;
+				@media(min-width: $screen-sm) {
+					flex: 1 1 33.3%;
+					font-size: 0.6em;
+				}
+				@media(min-width: $screen-md) {
+					font-size: 0.7em;
+				}
 			}
 
 			li.flex-100-width {

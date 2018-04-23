@@ -16,6 +16,8 @@
 	<footer id="colophon" class="site-footer cell">
 		<div class="max-width-wrap">
 			<div class="site-info">
+				<a target="_blank" href="https://www.facebook.com/mygswireless"><i class="fab fa-facebook-square"></i></a>
+				<span class="sep"> | </span>
 				Copyright GS Wireless <?php echo date('Y'); ?>
 				<span class="sep"> | </span>
 				<i class="fa fa-lock" aria-hidden="true"></i> Secured with SSL 
