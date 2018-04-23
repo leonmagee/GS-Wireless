@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Homepage
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
