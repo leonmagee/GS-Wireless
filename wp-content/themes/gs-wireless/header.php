@@ -77,8 +77,8 @@
 									<a href="#">Sign-Up<i class="fas fa-caret-down"></i></a>
 
 									<ul class="sub-menu">
-										<li><a href="<?php echo site_url(); ?>/become-a-dealer">H2O Wireless</a></li>
-										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Lyca Mobile</a></li>
+										<li><a href="<?php echo site_url(); ?>/become-an-h2o-wireless-dealer">H2O Wireless</a></li>
+										<li><a href="<?php echo site_url(); ?>/become-a-lyca-mobile-dealer">Lyca Mobile</a></li>
 										<li><a href="<?php echo site_url(); ?>/sign-up-for-gs-posa">GS POSA</a></li>
 									</ul>
 
