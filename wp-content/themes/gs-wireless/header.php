@@ -74,11 +74,12 @@
 								</li>
 								
 								<li>
-									<a href="#">Dealers<i class="fas fa-caret-down"></i></a>
+									<a href="#">Sign-Up<i class="fas fa-caret-down"></i></a>
 
 									<ul class="sub-menu">
-										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Become a Dealer</a></li>
-										<li><a href="<?php echo site_url(); ?>/sign-up-for-gs-posa">Sign Up For GS POSA</a></li>
+										<li><a href="<?php echo site_url(); ?>/become-a-dealer">H2O Wireless</a></li>
+										<li><a href="<?php echo site_url(); ?>/become-a-dealer">Lyca Mobile</a></li>
+										<li><a href="<?php echo site_url(); ?>/sign-up-for-gs-posa">GS POSA</a></li>
 									</ul>
 
 								</li>
