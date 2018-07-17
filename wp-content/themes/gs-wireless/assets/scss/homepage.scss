@@ -28,11 +28,11 @@
     background-image: url('../img/asanoha-400px.png');
     background-size: 200px 173.5px;
 
-    @media(min-width: $screen-sm) {
-        display: grid;
-        grid-auto-flow: column;
-        grid-gap: $gutter_width;
-    }
+    // @media(min-width: $screen-sm) {
+    //     display: grid;
+    //     grid-auto-flow: column;
+    //     grid-gap: $gutter_width;
+    // }
     .cta-item {
 
         a {

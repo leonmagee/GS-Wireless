@@ -43,9 +43,9 @@ body.gs-wireless {
 
     .video-embed-wraps {
         @media(min-width: $screen-md) {
-            display: grid;
-            grid-gap: 20px;
-            grid-auto-flow: column;
+            // display: grid;
+            // grid-gap: 20px;
+            // grid-auto-flow: column;
         }
         margin-bottom: 20px;
     }

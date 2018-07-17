@@ -49,7 +49,7 @@ get_header(); ?>
 
   </div>
 
-  <div class="homepage-cta-wrap">
+  <div class="homepage-cta-wrap grid-x grid-margin-x">
 
     <?php $cta_boxes = get_field('cta_boxes', 'option'); 
 
@@ -65,7 +65,7 @@ get_header(); ?>
 
       ?>
 
-      <div class="cta-item">
+      <div class="cta-item cell medium-3">
 
         <a class="<?php echo $link; ?>" href="<?php echo $link_url; ?>">
           
