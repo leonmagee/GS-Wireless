@@ -67,7 +67,7 @@ get_header(); ?>
 
       <div class="cta-item cell medium-3">
 
-        <a class="<?php echo $link; ?>" href="<?php echo $link_url; ?>">
+        <a class="<?php echo $link; ?> grid-x grid-margin-y grid-margin-x" href="<?php echo $link_url; ?>">
           
           <img src="<?php echo $img_url; ?>" />
 
