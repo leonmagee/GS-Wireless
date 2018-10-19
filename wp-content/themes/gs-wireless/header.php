@@ -101,15 +101,8 @@
 											<a target="_blank" href="https://dsm.lycamobile.us">Lyca Agent Log-In</a>
 										</li>
 										<li>
-											<a target="_blank" href="https://gs-wireless-h2o-ss.simtrackmanager.com/wp-login.php">STM H2O SS Log-In</a>
+											<a target="_blank" href="https://stmmax.com">Sim Track Manager</a>
 										</li>
-										<li>
-											<a target="_blank" href="https://gs-wireless-agents.simtrackmanager.com/wp-login.php">STM Agent Log-In</a>
-										</li>
-										<li>
-											<a target="_blank" href="https://gs-wireless-dealers.simtrackmanager.com/wp-login.php">STM Dealer Log-In</a>
-										</li>
-
 									</ul>
 
 								</li>
